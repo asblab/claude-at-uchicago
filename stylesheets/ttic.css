@@ -1,0 +1,18 @@
+/* Claude at TTIC — accent-token overrides on the shared design system.
+   Loaded AFTER extra.css (symlinked from docs/stylesheets/). TTIC blue
+   (#006eb6, sampled from ttic.edu) replaces maroon; the warm-paper field,
+   type, and components all inherit. Variable NAMES stay --uc-maroon* so the
+   shared sheet needs no edits — only values change here.
+
+   This flavor is LIGHT-ONLY (ax 2026-07-28): mkdocs-ttic.yml ships a single
+   `scheme: default` palette with no toggle, so the shared sheet's slate
+   (dark) rules never activate — no dark overrides are needed here. */
+
+:root {
+  --uc-maroon: #006eb6;
+  --uc-maroon-down: #005a94;
+  --uc-maroon-soft: #9fc0d8;
+}
+
+/* muted accent for the copy-prompt icon (light-mode counterpart of #a05252) */
+.md-typeset .md-clipboard { color: #4a7ea8; }
