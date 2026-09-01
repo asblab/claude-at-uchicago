@@ -520,21 +520,21 @@
 <h1 id="kill-a-monthly-chore">Kill a monthly chore</h1>
 <p class="promise"><span class="promise-kicker">In 10 minutes</span>Twelve monthly data exports — where the format <em>changed mid-year</em> — merged into one clean master file. Plus the part that matters: a script that does next month for free.</p>
 <div class="admonition note">
-<p class="admonition-title">First time in <strong>Code</strong>? It asks you to install Git for Windows once — click the "Download Git" button, run the installer accepting every default, then restart Claude. No <strong>Code</strong> tab at all? See check 3 on the <a href="../">start page</a>.</p>
+<p class="admonition-title">First time in <strong>Code</strong>? If it asks you to install Git for Windows, click the "Download Git" button, run the installer accepting every default, then restart Claude. No <strong>Code</strong> button at all? Update Claude Desktop (or reinstall from <a href="https://claude.ai/download">claude.ai/download</a>).</p>
 </div>
 <p>The data is real: trips from Divvy, Chicago's bike-share, split here into twelve monthly files. In January 2020 Divvy changed its data format — different column names, different categories. Exactly the kind of thing that quietly eats an afternoon.</p>
 <p><a class="md-button md-button--primary" download="monthly-csvs.zip" href="../assets/downloads/monthly-csvs.zip"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"/></svg></span> Download the 12 monthly files (ZIP, 1.2 MB)</a></p>
 <h2 id="steps">Steps</h2>
 <ol>
 <li>Download the ZIP, then <strong>right-click → Extract All… → Extract</strong> — accept the suggested location. You'll get a <code>monthly-csvs</code> folder with 12 CSVs.</li>
-<li>In Claude Desktop, switch to the <strong>Code</strong> tab and start a new session. When it asks which folder to work in, choose <strong>Downloads → monthly-csvs</strong>.</li>
+<li>In Claude Desktop, click <strong>Code</strong> at the top of the sidebar. Click the folder chip under the task box, pick <strong>Open folder…</strong>, and choose <strong>Downloads → monthly-csvs</strong>. Claude asks whether to trust this workspace — click <strong>Trust workspace</strong>.</li>
 <li>
 <p>Paste this and hit Enter:</p>
 <div class="highlight"><pre><span></span><code>This folder has 12 monthly bike-share exports, but the export format changed partway through the year (different column names and categories). Merge them into one clean master.csv: standardize the columns and dates, map the old format onto the new one, remove exact duplicate rows, and add a source_month column. Use the new format&#39;s column names for the master — drop columns only the old format has (like tripduration and gender), leave new-only ones blank for the older rows — and keep every row even when a station name is blank. Save the cleaning logic as a script called merge_months.py that I can rerun when next month&#39;s file arrives. Then show me: rows per month, and the top 5 busiest start stations overall (some months have rides with no station name — keep those rows in master.csv but skip them in the station ranking).
 </code></pre></div>
-<p>Claude Code reads the actual files, pinpoints exactly where the format flips, works out how the old columns map onto the new ones, and runs the merge — all in front of you. Along the way it will ask permission before reading the folder or running a step; approving is the normal flow — you're watching it work, not breaking anything.</p>
+<p>Claude Code reads the actual files, pinpoints exactly where the format flips, works out how the old columns map onto the new ones, and runs the merge — all in front of you. Along the way it asks permission before each command it runs — clicking <strong>Allow once</strong> each time is the normal flow; you're watching it work, not breaking anything.</p>
 <p><img alt="Claude Code working through the merge" class="shot" src="../assets/img/code-working.png" /></p>
-<p class="shot-cap">Code explores the files first, then asks permission before each step — approving is the normal flow.</p>
+<p class="shot-cap">Code explores the files first, then asks permission before each step — <strong>Allow once</strong> is the normal flow.</p>
 </li>
 <li>
 <p><strong>When it finishes</strong>, open the <code>monthly-csvs</code> folder in File Explorer. Double-click <code>master.csv</code> — it opens in Excel: about 30,000 rows, one consistent set of columns, <code>source_month</code> on every row. Next to it is <code>merge_months.py</code> — the script is the real artifact. Keep the folder open; you'll need it in a second.</p>

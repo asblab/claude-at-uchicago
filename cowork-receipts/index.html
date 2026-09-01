@@ -355,7 +355,7 @@
   <a href="#cowork-setup" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Turn on Cowork — first time only
+        First time using Cowork?
       
     </span>
   </a>
@@ -460,7 +460,7 @@
   <a href="#cowork-setup" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Turn on Cowork — first time only
+        First time using Cowork?
       
     </span>
   </a>
@@ -522,45 +522,40 @@
 <h1 id="photos-to-spreadsheet">Photos to spreadsheet</h1>
 <p class="promise"><span class="promise-kicker">In 10 minutes</span>Fifteen photos of real, crumpled restaurant receipts turned into a formatted Excel expense report — by one instruction.</p>
 <div class="admonition note">
-<p class="admonition-title">No <strong>Cowork</strong> tab? See check 3 on the <a href="../">start page</a> before downloading.</p>
+<p class="admonition-title">No <strong>Cowork</strong> next to Chat in the message box? See <a href="#cowork-setup">first time using Cowork</a> below before downloading.</p>
 </div>
 <p><a class="md-button md-button--primary" download="receipts.zip" href="../assets/downloads/receipts.zip"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"/></svg></span> Download the receipts (ZIP, 1.3 MB)</a></p>
-<h2 id="cowork-setup">Turn on Cowork — first time only</h2>
-<p>The first time you open the <strong>Cowork</strong> tab, Claude has to switch on one piece of Windows it works inside — a built-in feature called <strong>Virtual Machine Platform</strong>. You approve it once, restart the PC once, and never see it again. On Windows 11 it goes like this:</p>
-<ol>
-<li>Click the <strong>Cowork</strong> tab. Instead of opening, it tells you it needs <strong>Virtual Machine Platform</strong> and offers to set it up — say yes.</li>
-<li>Windows asks for permission — the usual "allow this app to make changes to your device?" box. Click <strong>Yes</strong>.</li>
-<li><strong>Restart the PC now</strong> (Start → Power → Restart). This is the step people skip: Windows only switches the feature on during a restart, so until you restart, Cowork just stays stuck.</li>
-<li>After the restart, open Claude Desktop and click <strong>Cowork</strong> again. This time it opens a real session — done for good.</li>
-</ol>
+<h2 id="cowork-setup">First time using Cowork?</h2>
+<p>Two things to know, both quick:</p>
+<ul>
+<li><strong>Cowork lives in the message box</strong> — a little <strong>Chat | Cowork</strong> toggle under where you type. If <strong>Cowork</strong> is greyed out with a note about a "modern installer", your Claude Desktop is an older install: grab the current installer from <a href="https://claude.ai/download">claude.ai/download</a> and run it once (a couple of minutes; Windows will ask to allow the installer — say Yes — and you stay signed in). Cowork lights up after that.</li>
+<li>
+<p><strong>The first time you point Cowork at a folder</strong>, Claude asks to <strong>allow changes to files in that folder</strong>. That's the deal you're making: it can create and edit files there — and nowhere else. Click <strong>Allow</strong>.</p>
+<p><img alt="The folder permission ask" class="shot" src="../assets/img/cowork-allow.png" /></p>
+<p class="shot-cap">The one-time ask per folder. <strong>Allow</strong> is what makes the demo work.</p>
+</li>
+</ul>
 <details class="note">
-<summary>No prompt? An error? Still stuck after restarting?</summary>
-<p><strong>Turn the feature on by hand</strong> — four clicks, fixes most cases:</p>
-<ol>
-<li>Press <strong>Start</strong>, type <code>windows features</code>, and open <strong>Turn Windows features on or off</strong>.</li>
-<li>Tick the box next to <strong>Virtual Machine Platform</strong> — just that one, leave the rest alone — and click <strong>OK</strong>.</li>
-<li>Let Windows apply it, click <strong>Restart now</strong>, then reopen Claude Desktop → <strong>Cowork</strong>.</li>
-</ol>
-<p><strong>The permission box wants an administrator password you don't have?</strong> The machine is managed — ask your IT support (or whoever manages it) to turn on "Virtual Machine Platform" for you. After their change and one restart, Cowork works.</p>
-<p><strong>Feature's on, you restarted, and Cowork still won't start?</strong> A few PCs ship with hardware virtualization turned off in the machine's firmware (BIOS). Don't chase that one solo — tell IT "Cowork needs virtualization enabled in BIOS", and do <a href="../chat-10k/">Demo 1</a> while you wait; Chat needs none of this.</p>
+<summary>Your (older) Claude asked for Windows' 'Virtual Machine Platform' instead?</summary>
+<p>Older versions of Cowork needed a Windows feature called <strong>Virtual Machine Platform</strong> — approve the prompt, restart once, done. If it sticks: press <strong>Start</strong>, type <code>windows features</code>, open <strong>Turn Windows features on or off</strong>, tick <strong>Virtual Machine Platform</strong>, click <strong>OK</strong>, restart. If the permission box wants an administrator password you don't have, ask your IT support to enable it for you. Or skip all of it — install the current version from <a href="https://claude.ai/download">claude.ai/download</a>, which doesn't need any of this.</p>
 </details>
 <h2 id="steps">Steps</h2>
 <ol>
 <li>Download the ZIP, then in your Downloads folder <strong>right-click → Extract All… → Extract</strong>. You'll get a <code>receipts</code> folder with the 15 photos, right next to the ZIP. <em>(Double-clicking the ZIP looks like a folder of photos, but it isn't one — Cowork can't use it. Extract first.)</em></li>
-<li>In Claude Desktop, switch to the <strong>Cowork</strong> tab and start a new session. <em>(Asks to set up Windows instead of opening? That's the <a href="#cowork-setup">one-time setup</a> above — one approval, one restart.)</em></li>
-<li>When Cowork asks which folder to work in, choose <strong>Downloads → receipts</strong>.</li>
+<li>In Claude Desktop, click <strong>New</strong>, then click <strong>Cowork</strong> in the message box (right next to <strong>Chat</strong>).</li>
+<li>Click <strong>Project or folder</strong> just below the box, pick <strong>Add a folder…</strong>, and choose <strong>Downloads → receipts</strong>. When Claude asks to allow changes to files in "receipts", click <strong>Allow</strong>.</li>
 <li>
 <p>Paste this and hit Enter:</p>
 <div class="highlight"><pre><span></span><code>This folder contains 15 photos of restaurant receipts. Read every receipt and build an Excel file called Expenses.xlsx with one row per receipt: Vendor, Date, Category, Subtotal, Tax, Total. For Category, use exactly one of: Fast Food, Sit-down, or Takeout/Deli — judge from the receipt. Add a totals row at the bottom using real SUM formulas (not typed-in numbers), and a second sheet summarizing spend by category. If a receipt is too blurry to read a value, put UNREADABLE in that cell instead of guessing.
 </code></pre></div>
 <p>Now watch. Cowork opens each photo, reads it, and builds the spreadsheet. Along the way it may pause to ask a question or for a go-ahead — read what it says and answer in plain English; that <em>is</em> the skill. If it seems to stall partway, type <code>continue</code>.</p>
 <p><img alt="Cowork working through the receipts" class="shot" src="../assets/img/cowork-working.png" /></p>
-<p class="shot-cap">Cowork reads each receipt and tracks its own progress — pausing to ask before big steps.</p>
+<p class="shot-cap">Cowork reads each receipt and tracks its own progress in the Progress panel — the folder's photos listed alongside.</p>
 </li>
 <li>
-<p><strong>When it finishes</strong>, open <code>Expenses.xlsx</code> from the folder.</p>
+<p><strong>When it finishes</strong>, the spreadsheet opens in a preview right next to the chat — and the real <code>Expenses.xlsx</code> is sitting in the folder.</p>
 <p><img alt="The finished expense report" class="shot" src="../assets/img/cowork-result.png" /></p>
-<p class="shot-cap">Expenses.xlsx — one row per receipt, real SUM formulas, UNREADABLE where a photo was too blurry.</p>
+<p class="shot-cap">Expenses.xlsx previewed beside the chat — one row per receipt, real SUM formulas in the totals row, and UNREADABLE (in red) where a photo was too blurry to read.</p>
 </li>
 </ol>
 <p><em>No Excel on this machine? Go to <a href="https://office.com">office.com</a>, sign in with your UChicago account, and upload <code>Expenses.xlsx</code> — it opens in Excel for the web.</em></p>
