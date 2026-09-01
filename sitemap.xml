@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://claude.ttic.edu/</loc>
+         <loc>https://asblab.github.io/claude-at-uchicago/</loc>
          <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://claude.ttic.edu/chat-survey/</loc>
+         <loc>https://asblab.github.io/claude-at-uchicago/chat-10k/</loc>
          <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://claude.ttic.edu/code-monthly-csvs/</loc>
+         <loc>https://asblab.github.io/claude-at-uchicago/code-monthly-csvs/</loc>
          <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://claude.ttic.edu/cowork-abstracts/</loc>
+         <loc>https://asblab.github.io/claude-at-uchicago/cowork-receipts/</loc>
          <lastmod>2026-09-01</lastmod>
     </url>
 </urlset>

@@ -10,10 +10,10 @@
       
       
       
-        <link rel="canonical" href="https://claude.ttic.edu/code-monthly-csvs/">
+        <link rel="canonical" href="https://asblab.github.io/claude-at-uchicago/code-monthly-csvs/">
       
       
-        <link rel="prev" href="../cowork-abstracts/">
+        <link rel="prev" href="../cowork-receipts/">
       
       
       
@@ -25,7 +25,7 @@
     
     
       
-        <title>3 · Code - Claude at TTIC</title>
+        <title>3 · Code - Claude at UChicago</title>
       
     
     
@@ -53,8 +53,6 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../stylesheets/ttic.css">
-    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -65,6 +63,8 @@
   
   
     
+    
+      
     
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kill-a-recurring-data-chore" class="md-skip">
+        <a href="#kill-a-monthly-chore" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Claude at TTIC" class="md-header__button md-logo" aria-label="Claude at TTIC" data-md-component="logo">
+    <a href=".." title="Claude at UChicago" class="md-header__button md-logo" aria-label="Claude at UChicago" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +108,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Claude at TTIC
+            Claude at UChicago
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -122,7 +122,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -192,13 +218,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Claude at TTIC" class="md-nav__button md-logo" aria-label="Claude at TTIC" data-md-component="logo">
+    <a href=".." title="Claude at UChicago" class="md-nav__button md-logo" aria-label="Claude at UChicago" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Claude at TTIC
+    Claude at UChicago
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -237,7 +263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../chat-survey/" class="md-nav__link">
+      <a href="../chat-10k/" class="md-nav__link">
         
   
   
@@ -264,7 +290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cowork-abstracts/" class="md-nav__link">
+      <a href="../cowork-receipts/" class="md-nav__link">
         
   
   
@@ -491,12 +517,12 @@
 
 <p class="kicker">Demo 3 · Code</p>
 
-<h1 id="kill-a-recurring-data-chore">Kill a recurring data chore</h1>
+<h1 id="kill-a-monthly-chore">Kill a monthly chore</h1>
 <p class="promise"><span class="promise-kicker">In 10 minutes</span>Twelve monthly data exports — where the format <em>changed mid-year</em> — merged into one clean master file. Plus the part that matters: a script that does next month for free.</p>
 <div class="admonition note">
-<p class="admonition-title">First time in <strong>Code</strong>? It asks you to install Git for Windows once — click the "Download Git" button, run the installer accepting every default, then restart Claude. No <strong>Code</strong> tab at all? See the checks on the <a href="../">start page</a>. And the bottom-left should say <strong>University of Chicago Enterprise</strong> — yes, at TTIC; if not, do <a href="../#sign-in">Sign in once</a> first.</p>
+<p class="admonition-title">First time in <strong>Code</strong>? It asks you to install Git for Windows once — click the "Download Git" button, run the installer accepting every default, then restart Claude. No <strong>Code</strong> tab at all? See check 3 on the <a href="../">start page</a>.</p>
 </div>
-<p>The data is real: trips from Divvy, Chicago's bike-share, split here into twelve monthly files. In January 2020 Divvy changed its data format — different column names, different categories. If you've ever merged a year of experiment logs after someone renamed the columns mid-project, you already know this file set — it's the chore that quietly eats an afternoon.</p>
+<p>The data is real: trips from Divvy, Chicago's bike-share, split here into twelve monthly files. In January 2020 Divvy changed its data format — different column names, different categories. Exactly the kind of thing that quietly eats an afternoon.</p>
 <p><a class="md-button md-button--primary" download="monthly-csvs.zip" href="../assets/downloads/monthly-csvs.zip"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"/></svg></span> Download the 12 monthly files (ZIP, 1.2 MB)</a></p>
 <h2 id="steps">Steps</h2>
 <ol>
@@ -521,21 +547,21 @@
 <p>Read the summary it printed. The monthly counts should rise and fall like real ridership — a Chicago winter trough, a summer peak, a sharp dip in spring 2020. If a number looks wrong, say so:</p>
 <div class="highlight"><pre><span></span><code>April 2020 looks way too low next to the other months. Is that real, or did the merge drop rows? Show me the row count straight from the April file.
 </code></pre></div>
-<p>It'll check the source and either confirm the dip is real (it is — the city shut down) or find its own bug. Trusting a number <em>because you checked it</em> is the sanity check you'd run on any pipeline — and the difference between using AI and being used by it.</p>
+<p>It'll check the source and either confirm the dip is real (it is — the city shut down) or find its own bug. Trusting a number <em>because you checked it</em> is the difference between using AI and being used by it.</p>
 <h2 id="the-kicker">The kicker</h2>
 <p>"Next month" just arrived:</p>
 <p><a class="md-button md-button--primary" download="divvy-2020-10.csv" href="../assets/downloads/divvy-2020-10.csv"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"/></svg></span> Download October's file (CSV)</a></p>
 <p>It lands in your <strong>Downloads</strong> folder like everything else. Drag <code>divvy-2020-10.csv</code> into your <code>monthly-csvs</code> folder — the one with the other 12 — so it sits next to them. Then tell Claude Code:</p>
 <div class="highlight"><pre><span></span><code>October&#39;s file just arrived (divvy-2020-10.csv). Rerun merge_months.py to include it and give me the updated monthly counts.
 </code></pre></div>
-<p>Seconds. That's the difference between <em>doing the chore</em> and <em>owning the recipe</em>. From now on, next month is just this one line to Claude — or run <code>merge_months.py</code> yourself from any Python environment; the thinking is done, and the recipe is yours to version-control.</p>
-<p><em>Yes, this is allowed — it's the University of Chicago enterprise workspace. For regulated data, check <a href="https://genai.uchicago.edu/about/generative-ai-guidance">UChicago's AI guidance</a> first.</em></p>
+<p>Seconds. That's the difference between <em>doing the chore</em> and <em>owning the recipe</em>. From now on, next month is just this one line to Claude — or, if you'd rather run the script yourself without opening Claude, install Python once (free, <a href="https://python.org">python.org</a>) and it runs on its own. Either way, the thinking is done; the recipe is yours.</p>
+<p><em>Yes, this is allowed on your UChicago enterprise account. For regulated data, check <a href="https://genai.uchicago.edu/about/generative-ai-guidance">UChicago's AI guidance</a> first.</em></p>
 <h2 id="your-turn">Your turn</h2>
-<p>What do you rebuild by hand every month — experiment logs, benchmark sweeps, survey exports, instrument dumps, grant budget roll-ups? That's your first real project. Point Code at last month's files and ask it to build the merge <em>and</em> the script.</p>
-<p>That's your first <strong>Automate</strong> — and where researchers go deepest. Two guides worth your time:</p>
+<p>What do you rebuild by hand every month — enrollment numbers, budget roll-ups, survey exports, lab logs? That's your first real project. Point Code at last month's files and ask it to build the merge <em>and</em> the script.</p>
+<p>That's your first <strong>Automate</strong> — and where people go deepest. Two guides worth your time:</p>
 <ul>
+<li><strong><a href="https://claudeblattman.com/">claudeblattman.com</a></strong> — UChicago Harris professor Chris Blattman's complete AI-workflow site ("AI for professionals who don't code"). His <a href="https://claudeblattman.com/resources/">resources page</a> is the map of the whole territory.</li>
 <li><strong><a href="https://paulgp.substack.com/p/getting-started-with-claude-code">Getting Started with Claude Code</a></strong> — Yale economist Paul Goldsmith-Pinkham's researcher on-ramp.</li>
-<li><strong><a href="https://claudeblattman.com/">claudeblattman.com</a></strong> — UChicago Harris professor Chris Blattman's complete AI-workflow site. His <a href="https://claudeblattman.com/resources/">resources page</a> is the map of the whole territory.</li>
 </ul>
 <hr />
 <p><em>Trip data: <a href="https://divvybikes.com/system-data">Divvy system data</a>, City of Chicago's bike share — provided under the <a href="https://divvybikes.com/data-license-agreement">Divvy Data License Agreement</a> and included here as sampled demo material for this tutorial (~10% per month, proportional to actual ridership).</em></p>
@@ -568,7 +594,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../cowork-abstracts/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2 · Cowork">
+          <a href="../cowork-receipts/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2 · Cowork">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -592,7 +618,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Something not work as shown? Email <a href="mailto:admin@ttic.edu">admin@ttic.edu</a>
+      Something not work as shown? Email <a href="mailto:claude-feedback@uchicago.edu">claude-feedback@uchicago.edu</a>
     </div>
   
   
