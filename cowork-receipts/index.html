@@ -528,22 +528,22 @@
 <h2 id="cowork-setup">First time using Cowork?</h2>
 <p>Two things to know, both quick:</p>
 <ul>
-<li><strong>Cowork lives in the message box</strong> — a little <strong>Chat | Cowork</strong> toggle under where you type. If <strong>Cowork</strong> is greyed out with a note about a "modern installer", your Claude Desktop is an older install: grab the current installer from <a href="https://claude.ai/download">claude.ai/download</a> and run it once (a couple of minutes; Windows will ask to allow the installer — say Yes — and you stay signed in). Cowork lights up after that.</li>
+<li><strong>Cowork lives in the message box</strong> — a little <strong>Chat | Cowork</strong> toggle under where you type. If <strong>Cowork</strong> is greyed out with a note about a "modern installer", your Claude Desktop is an older install: grab the current installer from <a href="https://claude.com/download">claude.com/download</a> and run it once (a couple of minutes; Windows will ask to allow the installer — say Yes — and you stay signed in). Cowork lights up after that.</li>
 <li>
-<p><strong>The first time you point Cowork at a folder</strong>, Claude asks to <strong>allow changes to files in that folder</strong>. That's the deal you're making: it can create and edit files there — and nowhere else. Click <strong>Allow</strong>.</p>
+<p><strong>Each time you add a folder to a Cowork session</strong>, Claude asks to <strong>allow changes to files in that folder</strong>. That's the deal you're making: it can edit, delete, and share files in that folder — and nowhere else. Click <strong>Allow</strong> (<strong>Always allow</strong> stops it asking for that folder).</p>
 <p><img alt="The folder permission ask" class="shot" src="../assets/img/cowork-allow.png" /></p>
-<p class="shot-cap">The one-time ask per folder. <strong>Allow</strong> is what makes the demo work.</p>
+<p class="shot-cap">The ask each time you add a folder — yours will say "receipts". <strong>Allow</strong> is what makes the demo work.</p>
 </li>
 </ul>
 <details class="note">
 <summary>Your (older) Claude asked for Windows' 'Virtual Machine Platform' instead?</summary>
-<p>Older versions of Cowork needed a Windows feature called <strong>Virtual Machine Platform</strong> — approve the prompt, restart once, done. If it sticks: press <strong>Start</strong>, type <code>windows features</code>, open <strong>Turn Windows features on or off</strong>, tick <strong>Virtual Machine Platform</strong>, click <strong>OK</strong>, restart. If the permission box wants an administrator password you don't have, ask your IT support to enable it for you. Or skip all of it — install the current version from <a href="https://claude.ai/download">claude.ai/download</a>, which doesn't need any of this.</p>
+<p>Older versions of Cowork asked for a Windows feature called <strong>Virtual Machine Platform</strong> — approve the prompt, restart once, done. If it sticks: press <strong>Start</strong>, type <code>windows features</code>, open <strong>Turn Windows features on or off</strong>, tick <strong>Virtual Machine Platform</strong>, click <strong>OK</strong>, restart. If the permission box wants an administrator password you don't have, ask your IT support to enable it for you. Or skip all of it — install the current version from <a href="https://claude.com/download">claude.com/download</a>, which doesn't need any of this.</p>
 </details>
 <h2 id="steps">Steps</h2>
 <ol>
 <li>Download the ZIP, then in your Downloads folder <strong>right-click → Extract All… → Extract</strong>. You'll get a <code>receipts</code> folder with the 15 photos, right next to the ZIP. <em>(Double-clicking the ZIP looks like a folder of photos, but it isn't one — Cowork can't use it. Extract first.)</em></li>
 <li>In Claude Desktop, click <strong>New</strong>, then click <strong>Cowork</strong> in the message box (right next to <strong>Chat</strong>).</li>
-<li>Click <strong>Project or folder</strong> just below the box, pick <strong>Add a folder…</strong>, and choose <strong>Downloads → receipts</strong>. When Claude asks to allow changes to files in "receipts", click <strong>Allow</strong>.</li>
+<li>Click <strong>Project or folder</strong> just below the box, pick <strong>Add a folder</strong>, and choose <strong>Downloads → receipts</strong>. When Claude asks to allow changes to files in "receipts", click <strong>Allow</strong>.</li>
 <li>
 <p>Paste this and hit Enter:</p>
 <div class="highlight"><pre><span></span><code>This folder contains 15 photos of restaurant receipts. Read every receipt and build an Excel file called Expenses.xlsx with one row per receipt: Vendor, Date, Category, Subtotal, Tax, Total. For Category, use exactly one of: Fast Food, Sit-down, or Takeout/Deli — judge from the receipt. Add a totals row at the bottom using real SUM formulas (not typed-in numbers), and a second sheet summarizing spend by category. If a receipt is too blurry to read a value, put UNREADABLE in that cell instead of guessing.
